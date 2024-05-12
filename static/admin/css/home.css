@@ -1,0 +1,27 @@
+/* home.css */
+
+/* Estilos para el título */
+h1 {
+    color: #ff0000; /* Color rojo */
+    font-size: 24px; /* Tamaño de fuente de 24px */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+    color: #0000ff; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #00ff00; /* Color verde de fondo */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px; /* Relleno de 10px arriba y abajo, 20px izquierda y derecha */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.btn:hover {
+    background-color: #008000; /* Cambia el color de fondo al pasar el mouse */
+}

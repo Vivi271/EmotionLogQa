@@ -1,0 +1,29 @@
+{% extends 'base_p.html' %}
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1 class="text-primary mb-4">Registro de Emoción</h1>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="user" class="form-label">Nombre:</label>
+          <input type="text" id="user" name="user" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="emotion_level" class="form-label">Nivel de emoción:</label>
+          <select id="emotion_level" name="emotion_level" class="form-select" required>
+            <option value="1">Triste 😞</option> 
+            <option value="2">Enojado/a 😡</option> 
+            <option value="3">Neutral 😌</option>
+            <option value="4">Ansioso/a 😰</option> 
+            <option value="5">Alegre 😃</option> 
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Guardar elección</button>
+        <a href="{% url 'home' %}" class="btn btn-secondary mt-3">Volver a Inicio</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
