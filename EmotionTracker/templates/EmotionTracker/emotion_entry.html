@@ -13,15 +13,16 @@
         <div class="form-group">
           <label for="emotion_level" class="form-label">Nivel de emoción:</label>
           <select id="emotion_level" name="emotion_level" class="form-select" required>
-            <option value="1">Triste 😞</option> 
-            <option value="2">Enojado/a 😡</option> 
+            <option value="1">Triste 😞</option>
+            <option value="2">Enojado/a 😡</option>
             <option value="3">Neutral 😌</option>
-            <option value="4">Ansioso/a 😰</option> 
-            <option value="5">Alegre 😃</option> 
+            <option value="4">Ansioso/a 😰</option>
+            <option value="5">Alegre 😃</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary mt-3">Guardar elección</button>
         <a href="{% url 'home' %}" class="btn btn-secondary mt-3">Volver a Inicio</a>
+        <a href="{% url 'streaming_home' %}" class="btn btn-primary mt-3">Ver Streaming</a>  <!-- Enlace al streaming -->
       </form>
     </div>
   </div>
